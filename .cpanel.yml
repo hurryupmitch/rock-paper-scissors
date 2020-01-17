@@ -6,4 +6,9 @@ deployment:
  - /bin/cp index.html $DEPLOYPATH
  - /bin/cp style.css $DEPLOYPATH
  - /bin/cp app.js $DEPLOYPATH
- - /bin/cp assets/ $DEPLOYPATH
+ 
+ ---
+ deployment:
+  tasks:
+ - export DEPLOYPATH=/home/bet39bnbm53e/public_html/rps/assets
+ - /bin/cp assets/* $DEPLOYPATH
