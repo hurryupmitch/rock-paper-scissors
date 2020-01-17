@@ -3,12 +3,4 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/bet39bnbm53e/public_html/rps/
- - /bin/cp index.html $DEPLOYPATH
- - /bin/cp style.css $DEPLOYPATH
- - /bin/cp app.js $DEPLOYPATH
- 
- ---
- deployment:
-  tasks:
- - export DEPLOYPATH=/home/bet39bnbm53e/public_html/rps/assets
- - /bin/cp assets/* $DEPLOYPATH
+ - /bin/cp -r * $DEPLOYPATH
