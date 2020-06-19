@@ -90,7 +90,7 @@ section {
     justify-content: space-between;
     align-items: center;
 }
-@media screen and (min-width 500px) {
+@media screen and (min-width: 500px) {
     .options {
         flex-direction: column;
     }
