@@ -1,12 +1,6 @@
 
 ---
 deployment:
-<<<<<<< HEAD
   tasks:
     - export DEPLOYPATH=/home/ui0it7ugrg9a/public_html/rps.rockoftheearth.com
     - /bin/cp -R * $DEPLOYPATH
-=======
- tasks:
- - export DEPLOYPATH=/home/bet39bnbm53e/public_html/rps/
- - /bin/cp -r * $DEPLOYPATH
->>>>>>> 2733fe43485ed474ff7803b7e44af329d91030e3
