@@ -102,7 +102,7 @@ const compareHands = (playerChoice, computerChoice) => {
         }
     }
 }
-//alert and reset after a score gets to 5//
+//alert and reset after a score gets to 3, report scores in alert//
 const endGame = (pScore,cScore) => {
     if(pScore<cScore) alert('You Lose the Game! \n\nYou: '+ pScore + '\nComputer: '+ cScore + '\nGames in this Match: ' + gCount + '\n\n*click to restart the game*');
     else alert('You Win the Game!! \n\nYou: '+ pScore + '\nComputer: '+ cScore + '\nGames in this Match: ' + gCount + '\n\n*click to restart the game*');
@@ -110,7 +110,7 @@ const endGame = (pScore,cScore) => {
     return;
 }
 const checkGame = () => {
-    if(pScore===5 || cScore===5) endGame(pScore,cScore);
+    if(pScore===3 || cScore===3) endGame(pScore,cScore);
 }
 
 //Call all the inner functions//

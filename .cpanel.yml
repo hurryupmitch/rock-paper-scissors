@@ -1,8 +1,6 @@
 
 ---
 deployment:
- tasks:
- - export DEPLOYPATH=/home/bet39bnbm53e/public_html/rps/
- - /bin/cp index.html $DEPLOYPATH
- - /bin/cp style.css $DEPLOYPATH
- - /bin/cp app.js $DEPLOYPATH
+  tasks:
+    - export DEPLOYPATH=/home/ui0it7ugrg9a/public_html/rps.rockoftheearth.com
+    - /bin/cp -R * $DEPLOYPATH

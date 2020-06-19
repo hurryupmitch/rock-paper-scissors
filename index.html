@@ -1,52 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="./style.css" />
-  <title>Rock Paper Scissors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock Paper Scissors</title>
 </head>
+<header>
+    <!--NAVIGATION BAR-->
+    <nav id="navbar">
+        <div class="topnav">
+            <a class="nav-link" href="www.rockoftheearth.com">Home</a>
+            <a class="nav-link" href="www.rockoftheearth.com/#contact">Contact</a>
+            <a class="nav-link" href="www.rockoftheearth.com/#projects">Projects</a>
+            <a class="nav-link" href="www.rockoftheearth.com/#aboutme">About Me</a>
+        </div>
+    </nav>
+</header>
+
 <body>
-<section class="game">
-    <div class="intro">
-        <h1>Rock Paper Scissors</h1>
-        <h2>First To Five Wins</h2>
-        <button>Play!</button>
+    <div class="container container-3">
+        <!--PROJECT SECTION-->
+        <section class="game">
+            <div class="intro">
+                <h1>Rock Paper Scissors</h1>
+                <h2>First To Three Wins</h2>
+                <button>Play!</button>
+            </div>
+
+            <div class="match fadeOut">
+                <div class="score">
+                    <div class="player-score">
+                        <h2>Player</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="computer-score">
+                        <h2>Computer</h2>
+                        <p>0</p>
+                    </div>
+                </div>
+                <h2 class="winner">Choose an Option</h2>
+                <div class="hands">
+                    <img class="player-hand" src="./assets/rock.png" alt="rock">
+                    <img class="computer-hand" src="./assets/rock.png" alt="rock">
+                </div>
+                <div class="options">
+                    <button class="rock">rock</button>
+                    <button class="paper">paper</button>
+                    <button class="scissors">scissors</button>
+                </div>
+                <div class="tools">
+                    <form>
+                        <input type="button" value="Reset Game" onclick="location.reload();" />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--End Project-->
     </div>
-
-    <div class="match fadeOut">
-        <div class="score">
-            <div class="player-score">
-                <h2>Player</h2>
-                <p>0</p>
+    <div class="mids container-2" id="contact">
+        <div class="row">
+            <div class="column">
+                <a id="profile-link" href="https://www.freecodecamp.org/mitchlevy" target="_blank">FCC Profile</a>
             </div>
-            <div class="computer-score">
-                <h2>Computer</h2>
-                <p>0</p>
+            <div class="column">
+                <a id="profile-link2" href="https://github.com/hurryupmitch" target="_blank">Github</a>
+            </div>
+            <div class="column">
+                <a id="profile-link3" href="mailto:mitch@rockoftheearth.com">Email</a>
             </div>
         </div>
-        <h2 class="winner">Choose an Option</h2>
-        <div class="hands">
-            <img class="player-hand" src="./assets/rock.png" alt="rock">
-            <img class="computer-hand" src="./assets/rock.png" alt="rock">
-        </div>
-        <div class="options">
-            <button class="rock">rock</button>
-            <button class="paper">paper</button>
-            <button class="scissors">scissors</button>
-        </div>
-        <div class="tools">
-            <form>
-                <input type = "button" value = "Reset Game" onclick = "location.reload();"/>
-            </form>
-            </div>
     </div>
-</section>
-
-
-
-<script src="app.js"></script>
+    <script src="app.js"></script>
 
 
 </body>
+
 </html>
